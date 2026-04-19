@@ -1,0 +1,211 @@
+@use "sass:color";
+
+.showcase {
+  padding: 40px 0;
+  width: 100%;
+  background-color: #ffffff;
+
+  .container {
+    max-width: 1391px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+
+  .showcase-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    margin-bottom: 20px;
+
+    .line {
+      flex: 1;
+      height: 1px;
+      background: #dedede;
+    }
+
+    h2 {
+      color: #3442b5;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .view-all-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    .view-all {
+      color: #3f3f40;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  .showcase-tabs {
+    margin-bottom: 30px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      border: 1px solid #bdbdbd;
+      list-style: none;
+
+      li {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        border-right: 1px solid #bdbdbd;
+        font-size: 16px;
+        font-weight: 400;
+        color: #3b3b3b;
+        background: #fff;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &.active {
+          color: #3442b5;
+          font-family: Poppins;
+
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  .products-slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1391px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .swiper {
+      width: 100%;
+      padding: 20px 45px;
+    }
+
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      border: none;
+      cursor: pointer;
+
+      background-image: url("../../assets/icons/showcase/Group 2412.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: transparent;
+
+      &.left {
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+      }
+
+      &.right {
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+      &.swiper-button-disabled {
+        opacity: 0.2;
+        cursor: auto;
+      }
+    }
+  }
+}
+
+.product-card {
+  width: 270.222px;
+  height: 455px;
+  padding: 20px 12px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+
+  .product-image {
+    width: 100%;
+    max-width: 200px;
+    height: 228px;
+    margin: 0 auto 15px;
+    object-fit: contain;
+  }
+
+  .product-info {
+    width: 100%;
+
+    .description {
+      color: #3f3f40;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 12px;
+      height: 45px;
+      overflow: hidden;
+    }
+
+    .current-price {
+      color: #3f3f40;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .installments {
+      color: #3f3f40;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .shipping {
+      color: #3442b5;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .btn-buy {
+      border-radius: 4px;
+      background: #3442b5;
+      width: 100%;
+      height: 44px;
+      color: #fff;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.newsletter {
+  width: 100%;
+  height: 162px;
+  background-color: #271c47;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+
+  .newsletter-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .newsletter-text {
+    h2 {
+      width: 463px;
+      color: #fff;
+      font-family: "Outfit", sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 8px;
+    }
+
+    p {
+      width: 515px;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .inputs-group {
+      display: flex;
+      gap: 10px;
+
+      input {
+        width: 233px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        border: 1px solid #e7e7e7;
+        background: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        outline: none;
+
+        &::placeholder {
+          color: #9f9f9f;
+        }
+      }
+
+      .btn-subscribe {
+        padding: 15px 40px;
+        background: #f7ca11;
+        color: #271c47;
+        border: none;
+        border-radius: 8px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: brightness 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+
+    .terms {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}

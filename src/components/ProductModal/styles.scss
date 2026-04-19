@@ -1,0 +1,138 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-container {
+  width: 769px;
+  height: 299.257px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+
+  margin: auto;
+
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #707070;
+    cursor: pointer;
+  }
+}
+
+.modal-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+
+  .modal-image {
+    width: 247px;
+    height: 192.199px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .modal-info {
+    flex: 1;
+
+    .modal-title {
+      height: 16.86px;
+      align-self: stretch;
+      color: var(--Cinza-Escuro, #3f3f40);
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 1px;
+    }
+
+    .modal-price {
+      margin: 15px 0;
+      height: 17px;
+      align-self: stretch;
+      color: var(--Cinza-Escuro, #3f3f40);
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 1px;
+    }
+
+    .modal-description {
+      color: var(--Cinza-Mdio, #9f9f9f);
+      font-family: "Work Sans";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150.5%;
+      letter-spacing: 0.5px;
+      display: flex;
+      width: 290px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .modal-details-link {
+      text-decoration: none;
+      color: var(--Azul, #3442b5);
+      font-family: "Work Sans";
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      letter-spacing: 0.55px;
+    }
+  }
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #041e50;
+    border-radius: 4px;
+    padding: 5px 15px;
+    gap: 15px;
+    color: #041e50;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #041e50;
+    }
+  }
+
+  .btn-buy {
+    background: #f7ca11;
+    color: #271c47;
+    border: none;
+    border-radius: 4px;
+    width: 245px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}
