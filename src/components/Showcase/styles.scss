@@ -172,10 +172,21 @@
     }
 
     .current-price {
-      color: #3f3f40;
+      color: var(--Preto, #3f3f40);
       font-family: Poppins;
       font-size: 20px;
+      font-style: normal;
       font-weight: 700;
+      line-height: normal;
+    }
+    .old-price {
+      color: #808080;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: line-through;
     }
 
     .installments {

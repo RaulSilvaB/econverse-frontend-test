@@ -41,47 +41,44 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <Header />
+      {loading ? (
+        <p style={{ textAlign: "center", padding: "3rem", fontSize: "1.2rem" }}>
+          Carregando produtos...
+        </p>
+      ) : (
+        <>
+          <Header />
 
-      <main>
-        <Banner />
-        <CategoryNav />
-
-        {loading ? (
-          <p
-            style={{ textAlign: "center", padding: "3rem", fontSize: "1.2rem" }}
-          >
-            Carregando produtos...
-          </p>
-        ) : (
+          <Banner />
+          <CategoryNav />
           <Showcase
             title="Produtos relacionados"
             products={products}
             showTabs={true}
           />
-        )}
 
-        <Partners />
+          <Partners />
 
-        <Showcase
-          title="Produtos relacionados"
-          products={products}
-          showTabs={false}
-        />
+          <Showcase
+            title="Produtos relacionados"
+            products={products}
+            showTabs={false}
+          />
 
-        <Partners />
-        <Brands />
+          <Partners />
+          <Brands />
 
-        <Showcase
-          title="Produtos relacionados"
-          products={products}
-          showTabs={false}
-        />
+          <Showcase
+            title="Produtos relacionados"
+            products={products}
+            showTabs={false}
+          />
 
-        <Newsletter />
-      </main>
+          <Newsletter />
 
-      <Footer />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

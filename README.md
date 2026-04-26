@@ -8,7 +8,6 @@ Este repositório contém a solução para o desafio técnico da Econverse.
 - TypeScript (para tipagem estática e segurança do código)
 - SASS (Pré-processador para estilização avançada)
 
-
 🛠️ Funcionalidades Implementadas
 
 - Vitrina Dinâmica: Consumo de dados via `fetch` a partir de um ficheiro JSON.
@@ -23,3 +22,4 @@ Siga os passos abaixo para executar o projeto na sua máquina:
 1. Clonar o repositório:
    ```bash
    git clone https://github.com/RaulSilvaB/econverse-frontend-test.git
+   ```

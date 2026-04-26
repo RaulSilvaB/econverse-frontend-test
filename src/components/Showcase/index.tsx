@@ -98,7 +98,13 @@ export const Showcase: React.FC<ShowcaseProps> = ({
                   />
                   <div className="product-info">
                     <p className="description">{product.productName}</p>
-                    <p className="old-price">R$ 30,90</p>
+                    <p className="old-price">
+                      {(product.price * 1.1).toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
+                      .
+                    </p>
                     <p className="current-price">
                       {product.price.toLocaleString("pt-BR", {
                         style: "currency",
@@ -120,8 +126,8 @@ export const Showcase: React.FC<ShowcaseProps> = ({
               </SwiperSlide>
             ))}
           </Swiper>
-
           <button className="slider-arrow left" />
+
           <button className="slider-arrow right" />
         </div>
       </div>
